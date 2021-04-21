@@ -1,0 +1,11 @@
+﻿Name,Gender,Age,Position,BMI,Drink,Smoke,Total_Cholesterol(mg/dL)
+Ada,Female,39,Associate Professor,,Occasionally,No,172
+Alex,Male,53,Professor,31.7,Often,Yes,255
+Bill,Male,25,Assistant Professor,20.5,No,No,159
+Daisy,Female,28,Assistant Professor,22.7,Occasionally,No,166
+David,Male,45,Professor,30.2,Often,Yes,242
+John,Male,37,Associate Professor,21.6,No,Yes,180
+Kate,Female,48,Professor,26.3,Occasionally,Yes,181
+Lewis,Male,40,Associate Professor,24.4,Occasionally,No,192
+Lily,Female,52,Professor,28,Occasionally,No,201
+Mary,Female,43,Associate Professor,28.6,Often,No,215
