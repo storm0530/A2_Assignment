@@ -4,7 +4,7 @@ Dep. Variable:                    BMI   R-squared:                       0.979
 Model:                            OLS   Adj. R-squared:                  0.967
 Method:                 Least Squares   F-statistic:                     78.97
 Date:                Fri, 23 Apr 2021   Prob (F-statistic):           0.000124
-Time:                        07:35:22   Log-Likelihood:                -7.1195
+Time:                        15:28:40   Log-Likelihood:                -7.1195
 No. Observations:                   9   AIC:                             22.24
 Df Residuals:                       5   BIC:                             23.03
 Df Model:                           3                                         

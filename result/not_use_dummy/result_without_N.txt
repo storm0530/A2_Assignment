@@ -1,0 +1,36 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    BMI   R-squared:                       0.990
+Model:                            OLS   Adj. R-squared:                  0.961
+Method:                 Least Squares   F-statistic:                     34.03
+Date:                Fri, 23 Apr 2021   Prob (F-statistic):             0.0288
+Time:                        15:26:08   Log-Likelihood:                -3.7159
+No. Observations:                   9   AIC:                             21.43
+Df Residuals:                       2   BIC:                             22.81
+Df Model:                           6                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                        8.4343      4.383      1.924      0.194     -10.425      27.294
+Gender                      -1.2726      1.188     -1.071      0.396      -6.384       3.839
+Age                         -0.0169      0.143     -0.118      0.917      -0.632       0.598
+Position                     1.5424      1.543      0.999      0.423      -5.098       8.183
+Drink                        1.1634      1.251      0.930      0.450      -4.218       6.544
+Smoke                       -0.5979      0.856     -0.699      0.557      -4.281       3.085
+Total_Cholesterol(mg/dL)     0.0729      0.041      1.767      0.219      -0.105       0.251
+==============================================================================
+Omnibus:                        0.594   Durbin-Watson:                   1.555
+Prob(Omnibus):                  0.743   Jarque-Bera (JB):                0.564
+Skew:                           0.333   Prob(JB):                        0.754
+Kurtosis:                       1.971   Cond. No.                     3.66e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.66e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+
+According to the multiple regression analysis by Arashi Fukui,
+Ada's BMI is about 24.56878695492421.

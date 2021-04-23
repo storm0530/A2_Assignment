@@ -1,11 +1,11 @@
 ,Name,Gender,Age,Position,BMI,Drink,Smoke,Total_Cholesterol(mg/dL)
-0,Ada,0,39,Associate Professor,,1,0,172
-1,Alex,1,53,Professor,31.7,2,1,255
-2,Bill,1,25,Assistant Professor,20.5,0,0,159
-3,Daisy,0,28,Assistant Professor,22.7,1,0,166
-4,David,1,45,Professor,30.2,2,1,242
-5,John,1,37,Associate Professor,21.6,0,1,180
-6,Kate,0,48,Professor,26.3,1,1,181
-7,Lewis,1,40,Associate Professor,24.4,1,0,192
-8,Lily,0,52,Professor,28.0,1,0,201
-9,Mary,0,43,Associate Professor,28.6,2,0,215
+0,Ada,0,39,Associate Professor,,1,No,172
+1,Alex,1,53,Professor,31.7,2,Yes,255
+2,Bill,1,25,Assistant Professor,20.5,0,No,159
+3,Daisy,0,28,Assistant Professor,22.7,1,No,166
+4,David,1,45,Professor,30.2,2,Yes,242
+5,John,1,37,Associate Professor,21.6,0,Yes,180
+6,Kate,0,48,Professor,26.3,1,Yes,181
+7,Lewis,1,40,Associate Professor,24.4,1,No,192
+8,Lily,0,52,Professor,28.0,1,No,201
+9,Mary,0,43,Associate Professor,28.6,2,No,215
