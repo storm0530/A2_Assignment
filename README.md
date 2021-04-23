@@ -13,3 +13,5 @@ The implementation code and the data I used are as follows:
 * **blood_test_data.csv** : Blood test data (with missing data)
 
 * **blood_test_data_edited.csv** : Numeric converted blood test data (with missing values)
+
+* **result** : A directory containing the results of multiple regression analysis. The results are stored separately in the directory for the results with/without dummy variables, and for the results with/without Smoke and Drink values.
