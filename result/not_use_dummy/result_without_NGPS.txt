@@ -3,8 +3,8 @@
 Dep. Variable:                    BMI   R-squared:                       0.982
 Model:                            OLS   Adj. R-squared:                  0.971
 Method:                 Least Squares   F-statistic:                     89.02
-Date:                Fri, 23 Apr 2021   Prob (F-statistic):           9.27e-05
-Time:                        15:22:14   Log-Likelihood:                -6.5911
+Date:                Sat, 24 Apr 2021   Prob (F-statistic):           9.27e-05
+Time:                        01:54:44   Log-Likelihood:                -6.5911
 No. Observations:                   9   AIC:                             21.18
 Df Residuals:                       5   BIC:                             21.97
 Df Model:                           3                                         
@@ -12,22 +12,36 @@ Covariance Type:            nonrobust
 ============================================================================================
                                coef    std err          t      P>|t|      [0.025      0.975]
 --------------------------------------------------------------------------------------------
-const                       10.8938      2.209      4.932      0.004       5.216      16.571
-Age                          0.1510      0.036      4.171      0.009       0.058       0.244
-Drink                        2.2795      0.572      3.986      0.010       0.809       3.750
-Total_Cholesterol(mg/dL)     0.0319      0.016      1.994      0.103      -0.009       0.073
+const                       19.7416      0.490     40.287      0.000      18.482      21.001
+Age                          4.2275      1.014      4.171      0.009       1.622       6.833
+Drink                        4.5591      1.144      3.986      0.010       1.619       7.499
+Total_Cholesterol(mg/dL)     3.0631      1.536      1.994      0.103      -0.885       7.012
 ==============================================================================
 Omnibus:                        0.478   Durbin-Watson:                   2.736
 Prob(Omnibus):                  0.787   Jarque-Bera (JB):                0.383
 Skew:                          -0.392   Prob(JB):                        0.826
-Kurtosis:                       2.361   Cond. No.                     2.06e+03
+Kurtosis:                       2.361   Cond. No.                         11.6
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The condition number is large, 2.06e+03. This might indicate that there are
-strong multicollinearity or other numerical problems.
+
+
+Adj. R-squared: Overall accuracy of the regression equation
+0.971
+
+t: If the absolute value is large, it has a large impact on the objective variable
+{'Age': 4.171,
+ 'Drink': 3.986,
+ 'Total_Cholesterol(mg/dL)': 1.994,
+ 'const': 40.287}
+
+P>|t|: When the value is closer to 0, it has more statistical significance.
+{'Age': 0.009,
+ 'Drink': 0.01,
+ 'Total_Cholesterol(mg/dL)': 0.103,
+ 'const': 0.0}
 
 
 According to the multiple regression analysis by Arashi Fukui,
-Ada's BMI is about 24.54970413289363.
+Ada's BMI is about 24.549704132893638.

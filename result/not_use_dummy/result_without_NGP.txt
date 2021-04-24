@@ -1,0 +1,50 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    BMI   R-squared:                       0.982
+Model:                            OLS   Adj. R-squared:                  0.964
+Method:                 Least Squares   F-statistic:                     53.97
+Date:                Sat, 24 Apr 2021   Prob (F-statistic):           0.000981
+Time:                        02:16:42   Log-Likelihood:                -6.5454
+No. Observations:                   9   AIC:                             23.09
+Df Residuals:                       4   BIC:                             24.08
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                       19.7706      0.564     35.078      0.000      18.206      21.335
+Age                          4.2681      1.145      3.727      0.020       1.088       7.448
+Drink                        4.4340      1.415      3.134      0.035       0.505       8.363
+Smoke                       -0.1285      0.636     -0.202      0.850      -1.895       1.638
+Total_Cholesterol(mg/dL)     3.2409      1.922      1.686      0.167      -2.096       8.577
+==============================================================================
+Omnibus:                        1.078   Durbin-Watson:                   2.806
+Prob(Omnibus):                  0.583   Jarque-Bera (JB):                0.587
+Skew:                          -0.573   Prob(JB):                        0.746
+Kurtosis:                       2.497   Cond. No.                         13.8
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+Adj. R-squared: Overall accuracy of the regression equation
+0.964
+
+t: If the absolute value is large, it has a large impact on the objective variable
+{'Age': 3.727,
+ 'Drink': 3.134,
+ 'Smoke': -0.202,
+ 'Total_Cholesterol(mg/dL)': 1.686,
+ 'const': 35.078}
+
+P>|t|: When the value is closer to 0, it has more statistical significance.
+{'Age': 0.02,
+ 'Drink': 0.035,
+ 'Smoke': 0.85,
+ 'Total_Cholesterol(mg/dL)': 0.167,
+ 'const': 0.0}
+
+
+According to the multiple regression analysis by Arashi Fukui,
+Ada's BMI is about 24.56052275024643.

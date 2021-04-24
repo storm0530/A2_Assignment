@@ -2,16 +2,24 @@
 
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import sys
+import pprint as pp
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 
-DUMMY_FLAG = 1 # 1: Use dummy variables, 0: Don't use
+DUMMY_FLAG = 0 # 1: Use dummy variables, 0: Don't use
 
 # select header for explanatory variable
-HEADER_FOR_ANALYZE = ["Gender","Age","Drink","Total_Cholesterol(mg/dL)"]
+HEADER_FOR_ANALYZE = ["Age","Drink","Total_Cholesterol(mg/dL)"]
 # all header is ["Name","Gender","Age","Position","BMI","Drink","Smoke","Total_Cholesterol(mg/dL)"]
+
+
+
+# Function to normalize
+def min_max_norm(x):
+    min = x.min()
+    max = x.max()
+    result = (x-min)/(max-min)
+    return result
 
 # Function to find the response variable
 def predict_y(X, coef, header):
@@ -46,6 +54,10 @@ for i in range(len(df)):
     for j in HEADER_FOR_ANALYZE:
         if df.at[i,j] in numeric_dict:
             df.at[i,j] = numeric_dict[df.at[i,j]]
+
+# normalize header value for explanatory variable
+for i in HEADER_FOR_ANALYZE:
+    df[i] = min_max_norm(np.array(df[i]))
 
 # save data after conversion
 df.to_csv("./blood_test_data_edited.csv")
@@ -88,6 +100,10 @@ result = model.fit()
 # display the results of multiple regression analysis
 print(result.summary())
 
+Adj = round(result.rsquared_adj, 3)
+T_value = (round(result.tvalues, 3)).to_dict()
+P_value = (round(result.pvalues, 3)).to_dict()
+
 # get coefficients of the regression equation
 result_coef = result.params
 
@@ -97,6 +113,12 @@ predict = predict_y(X_test,result_coef,HEADER_FOR_ANALYZE)
 # save results of multiple regression analysis and prediction
 with open('result.txt', 'w') as f:
     print(f"{result.summary()}\n\n",file=f)
-    print(f"According to the multiple regression analysis by Arashi Fukui,\n\
+    print(f"Adj. R-squared: Overall accuracy of the regression equation",file=f)
+    print(f"{Adj}",file=f)
+    print(f"\nt: If the absolute value is large, it has a large impact on the objective variable",file=f)
+    pp.pprint(T_value,width=40,stream=f)
+    print(f"\nP>|t|: When the value is closer to 0, it has more statistical significance.",file=f)
+    pp.pprint(P_value,width=40,stream=f)
+    print(f"\n\nAccording to the multiple regression analysis by Arashi Fukui,\n\
 Ada's BMI is about {predict}.",file=f)
-# Ada's BMI is about 24.4609...
+# Ada's BMI is about 24.5497...

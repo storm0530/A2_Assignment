@@ -1,0 +1,55 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    BMI   R-squared:                       0.982
+Model:                            OLS   Adj. R-squared:                  0.965
+Method:                 Least Squares   F-statistic:                     55.68
+Date:                Sat, 24 Apr 2021   Prob (F-statistic):           0.000923
+Time:                        02:08:46   Log-Likelihood:                -6.4074
+No. Observations:                   9   AIC:                             22.81
+Df Residuals:                       4   BIC:                             23.80
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+============================================================================================
+                               coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                       16.6145      0.545     30.474      0.000      15.101      18.128
+Age                          4.6613      1.537      3.033      0.039       0.394       8.928
+Total_Cholesterol(mg/dL)     2.1882      2.725      0.803      0.467      -5.377       9.753
+Drink_0.0                    3.1974      0.540      5.921      0.004       1.698       4.697
+Drink_0.5                    5.3128      0.499     10.651      0.000       3.928       6.698
+Drink_1.0                    8.1043      1.079      7.513      0.002       5.109      11.099
+==============================================================================
+Omnibus:                        0.712   Durbin-Watson:                   2.623
+Prob(Omnibus):                  0.701   Jarque-Bera (JB):                0.581
+Skew:                          -0.248   Prob(JB):                        0.748
+Kurtosis:                       1.859   Cond. No.                     4.04e+16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 1.07e-32. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+
+
+Adj. R-squared: Overall accuracy of the regression equation
+0.965
+
+t: If the absolute value is large, it has a large impact on the objective variable
+{'Age': 3.033,
+ 'Drink_0.0': 5.921,
+ 'Drink_0.5': 10.651,
+ 'Drink_1.0': 7.513,
+ 'Total_Cholesterol(mg/dL)': 0.803,
+ 'const': 30.474}
+
+P>|t|: When the value is closer to 0, it has more statistical significance.
+{'Age': 0.039,
+ 'Drink_0.0': 0.004,
+ 'Drink_0.5': 0.0,
+ 'Drink_1.0': 0.002,
+ 'Total_Cholesterol(mg/dL)': 0.467,
+ 'const': 0.0}
+
+
+According to the multiple regression analysis by Arashi Fukui,
+Ada's BMI is about 24.554257461770852.
